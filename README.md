@@ -1,1 +1,1 @@
-# chat-bot
+AI-powered chatbot using the MERN Stack: 𝗥𝗲𝗮𝗰𝘁.𝗷𝘀 (𝗳𝗿𝗼𝗻𝘁𝗲𝗻𝗱), 𝗡𝗼𝗱𝗲.𝗷𝘀 + 𝗘𝘅𝗽𝗿𝗲𝘀𝘀.𝗷𝘀 (𝗯𝗮𝗰𝗸𝗲𝗻𝗱), 𝗮𝗻𝗱 𝗠𝗼𝗻𝗴𝗼𝗗𝗕 (𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲).
