@@ -3,6 +3,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { server } from "../main";
 import toast from "react-hot-toast";
 
+
+
 const ChatContext = createContext();
 
 export const ChatProvider = ({ children }) => {
@@ -16,7 +18,8 @@ export const ChatProvider = ({ children }) => {
     setPrompt("");
     try {
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAaOJbwqmVDr9s5JaOgsfP6df1BnBLnZMA",
+       url: import.meta.env.VITE_GEMINI_API_URL,
+       // url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAaOJbwqmVDr9s5JaOgsfP6df1BnBLnZMA",
         method: "post",
         data: {
           contents: [{ parts: [{ text: prompt }] }],
