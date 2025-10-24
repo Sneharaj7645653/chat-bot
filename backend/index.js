@@ -7,6 +7,15 @@ dotenv.config();
 const app = express();
 
 
+//importing routes
+import userRoutes from "./routes/userRoutes.js";
+
+
+//using routes
+app.use("/api/user", userRoutes);
+
+
+
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
