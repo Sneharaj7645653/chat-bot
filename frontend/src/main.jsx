@@ -5,7 +5,7 @@ import "./index.css";
 import { UserProvider } from "./context/UserContext.jsx";
 import { ChatProvider } from "./context/ChatContext.jsx";
 
-export const server = "https://chatserver-ay4r.onrender.com";
+export const server = "http://localhost:3001";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

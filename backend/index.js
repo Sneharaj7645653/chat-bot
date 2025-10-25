@@ -9,7 +9,12 @@ const app = express();
 
 // using middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://chatfrontend-six-sigma.vercel.app", 
+    "http://localhost:5173"  
+  ]
+}));
 
 //importing routes
 import userRoutes from "./routes/userRoutes.js";

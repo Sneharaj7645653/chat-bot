@@ -100,6 +100,7 @@ export const ChatProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
 
   async function fetchMessages() {
+    if (!selected) return;
     setLoading(true);
     try {
       const { data } = await axios.get(`${server}/api/chat/${selected}`, {
